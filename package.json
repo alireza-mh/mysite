@@ -1,0 +1,18 @@
+{
+  "name": "practice",
+  "version": "1.0.0",
+  "description": "I practice with this file",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test" : "echo \"Error: no test specified\" && exit 1" ,
+    "start":"npm run build" ,
+    "build":" browser-sync start --proxy practice --serveStatic  --files --port 1234"
+  },
+  "author": "Alireza",
+  "license": "MIT"
+}

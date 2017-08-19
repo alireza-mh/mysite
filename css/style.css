@@ -1,0 +1,234 @@
+.pfirst
+{
+  position: relative;
+  background: url(../img/business.jpg);
+  height: 450px;
+}
+.pfirst::before
+{
+  position: absolute;
+  top:0px;
+  margin: 0;
+  content: " ";
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 450px;
+  width: 100%;
+}
+.mythumbnail{
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  width: 100%;
+
+}
+
+.vasat{
+
+}
+.vasat >img{
+  vertical-align: top;
+}
+.con > * {
+  display:inline-block;
+
+  width: 100%;
+  vertical-align: middle !important;
+  background: blue;
+}
+.img-container{
+ height: 100px;
+
+}
+.con p {
+  margin: 0;
+  vertical-align: middle;
+}
+.middle > * {
+  vertical-align: middle;
+
+}
+.image{
+
+
+
+}
+.caption{
+  position: absolute;
+  top:20%;
+  text-align: center;
+  width: 100%;
+}
+.little
+{
+  width:auto !important;
+  opacity: 1 !important;
+}
+.little-caption
+{
+  position: relative;
+  display: inline-block;
+}
+.lcap{
+  position: absolute;
+  top:45%;
+  margin: auto;
+  left:0;
+  right:0;
+}
+.psecond img{
+  width: 100%;
+  opacity: 0.5;
+}
+.vcenter{
+  display: flex;
+  align-items: center;
+}
+.text-center{
+  margin: auto;
+}
+.welcome{
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.35);
+  border-top: 2px solid rgba(83, 119,115, 0.5);
+  border-bottom: 2px solid rgba(83, 119,115, 0.5);
+}
+.welcome h1{
+  margin:0px;
+  font-size: 45px;
+  color:white;
+  text-shadow: 3px 3px 5px black ;
+
+}
+.welcome2{
+  width: 100% ;
+  background-color: rgba(255, 255, 255, 0.35);
+  border-top: 2px solid rgba(83, 119,115, 0.5);
+  border-bottom: 2px solid rgba(83, 119,115, 0.5);
+  margin:0px;
+  font-size: 45px;
+  color:white;
+  text-shadow: 3px 3px 5px black ;
+}
+
+.flipper-container{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+
+}
+.back{
+  backface-visibility: hidden;
+  width: 100%;
+  height: 100%;
+  background: red;
+  position: relative;
+  top:0;
+  left:0;
+  transform: rotateY(180deg);
+}
+.front{
+  backface-visibility: visible;
+  position: absolute;
+  top:0px;
+  left:0px;
+  height: 100%;
+  width: 100%;
+
+  background: green;
+  transform: rotateY(0deg);
+}
+.flipper-container:hover .flipper{
+  transition: 3s linear;
+  transform: rotateY(720deg);
+
+}
+.flipper
+{
+  transition: 3s linear ;
+  transform-style: preserve-3d;
+  height: 100%;
+	position: relative;
+}
+
+.flipper-container2{
+  width: 250px;
+  height: 250px;
+  perspective: 1000px;
+}
+.flipper2{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  transition: 5s ;
+  transform-style: preserve-3d;
+}
+.front2 {
+  position:relative ;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  background-color: yellow;
+  transform: rotateY(0deg);
+}
+.back2 {
+  position:absolute ;
+  top:0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  background: pink;
+  transform: rotateY(180deg);
+}
+
+.flipper-container2:hover .flipper2{
+  transition: 3s;
+  transform: rotateY(180deg);
+}
+.flex{
+  display:flex;
+  background: purple;
+}
+
+.widthdiv{
+  width: 100%;
+  height:200px;
+  position: relative;
+}
+
+.cen{
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  margin:auto;
+}
+
+.mynav {
+position: relative;
+}
+
+.main li {
+  list-style: none;
+  float:left;
+  margin:5px;
+}
+
+
+
+.mynav > ul> li > div
+{
+ display: none;
+ position: absolute;
+ top:20px;
+ left:0;
+}
+.mynav > ul > li:hover > div
+{
+ display: block;
+}
+.dop li{
+  float:none;
+}
